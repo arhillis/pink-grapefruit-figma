@@ -4,6 +4,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ********** NAVBAR ****************** */
 nav{
     display: flex;
     justify-content: space-between;
@@ -33,6 +34,33 @@ nav{
     text-decoration: none;
 }
 
+/* *************** HEADER ******************* */
+
+header{
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+    font-style: heavy;
+    font-weight: bolder;
+    width: 350px;
+    margin: 0 auto;
+}
+
+header p{
+    width: 475px;
+    margin: 30px auto;
+}
+
+header img{
+    max-width: 1027px;
+    width: 100%;    
+    height: auto;
+}
+
+/* ************** MEDIA QUERIES ************* */
+
 @media screen and (max-width: 650px){
     .brand-lg{
         display: none;
@@ -40,5 +68,11 @@ nav{
 
     .brand-sm{
         display: block;
+    }
+}
+
+@media screen and (max-width: 500px){
+    header p {
+        width: 250px;
     }
 }
