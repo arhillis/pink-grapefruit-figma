@@ -12,12 +12,12 @@
 <body>
     <nav>
         <p class="brand-wrapper">
-            <span class="brand-lg">Hello Designers</span>
+            <span class="sm-hidden">Hello Designers</span>
             <span class="brand-sm" aria-hidden="true">HD</span>
         </p>
         <ul class="nav-links">
             <li class="nav-link-wrapper">
-                <a href="#" class="nav-link">About</a>
+                <a href="#about" class="nav-link">About</a>
             </li>
             <li class="nav-link-wrapper">
                 <a href="#" class="nav-link">Pricing</a>
@@ -34,7 +34,7 @@
         <p style="display: none;">Photo by <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif; font-size:12px;font-weight:bold;line-height:1.2; display:none" href="https://unsplash.com/@stereophototyp?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Sara Kurfeß"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Sara Kurfeß</span></a> on Unsplash</p>
     </header>
     <main>
-        <section class="container">
+        <section id="about" class="container">
             <h2>How It Works</h2>
             <article class="step">
                 <section class="step-desc">
@@ -46,8 +46,9 @@
                     <h3>Portfolio Feedback</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia nulla dolore veniam delectus aliquam eum dolor ducimus alias fugiat officia. Reprehenderit facilis, maiores neque distinctio harum maxime. Ratione, quam praesentium.</p>
                 </section>
-                <section>
+                <section class="overlay-wrapper sm-hidden">
                     <img src="bunny.jpg" alt="Painting of a bunny">
+                    <div class="overlay"></div>
                 </section>
             </article>
         </section>
