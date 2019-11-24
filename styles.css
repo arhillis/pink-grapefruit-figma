@@ -7,7 +7,14 @@ body{
 .container{
     width: 100%;
     max-width: 1027px;
-    margin: 0 auto;
+    margin: 150px auto;
+}
+
+.centered-sm-p{
+    text-align: center;
+    width: 475px;
+    margin: 30px auto;
+    line-height: 30px;
 }
 
 /* ********** NAVBAR ****************** */
@@ -52,11 +59,6 @@ h1{
     font-weight: bolder;
     width: 350px;
     margin: 0 auto;
-}
-
-header p{
-    width: 475px;
-    margin: 30px auto;
 }
 
 header img{
@@ -106,6 +108,15 @@ h2{
 
 .step-desc{
     max-width: 400px;
+}
+
+.icon-list{
+    width: 475px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    list-style-type: none;
+    grid-gap: 20px 50px;
 }
 
 
