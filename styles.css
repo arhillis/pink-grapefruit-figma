@@ -157,6 +157,13 @@ h2{
     margin-left: -20px;
 }
 
+.testimonial{
+    box-sizing: border-box;
+    background: #ececec;
+    padding: 20px;
+    width: 340px;
+}
+
 .pkg-btn{
     width: 340px;
     height: 48px;
@@ -169,6 +176,24 @@ h2{
 .pkg:hover{
     border: 2px solid #ccc;
     box-shadow: 0px 2px 24px rgba(220, 220, 220, 0.5);
+}
+
+/* ***** CONTACT ***** */
+
+#contact{
+    text-align: center;
+}
+
+#contact button{
+    box-sizing: border-box;
+    width: 200px;
+    height: 48px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
 }
 
 
