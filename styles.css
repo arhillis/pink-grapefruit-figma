@@ -20,7 +20,7 @@ body{
 
 .centered-sm-p{
     text-align: center;
-    width: 475px;
+    width: 550px;
     margin: 30px auto;
     line-height: 30px;
 }
@@ -30,11 +30,10 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 50px 60px;
-    
+    font-size: 16px;     
 }
 
 .brand-wrapper{
-    font-size: 28px; 
     margin-top: 2px;
 }
 
@@ -66,7 +65,7 @@ h1{
     font-size: 50px;
     font-style: heavy;
     font-weight: bolder;
-    width: 350px;
+    width: 550px;
     margin: 0 auto;
 }
 
@@ -120,7 +119,7 @@ h2{
 }
 
 .icon-list{
-    width: 475px;
+    width: 550px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -130,6 +129,46 @@ h2{
 
 .fab, .icon-list li img{
     margin-right: 10px;
+}
+
+/* **** PRICING **** */
+
+#pricing .pkg{
+    box-sizing: border-box;
+    width: 420px;
+    padding: 60px 40px;
+    margin-left: 30px;
+    font-size: 16px;
+    border: 2px solid #eee;
+}
+
+.pkg h3{
+    font-size: 35px;
+}
+
+.pkg-wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.features{
+    line-height: 60px;
+    margin-left: -20px;
+}
+
+.pkg-btn{
+    width: 340px;
+    height: 48px;
+    border: none;
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+}
+
+.pkg:hover{
+    border: 2px solid #ccc;
+    box-shadow: 0px 2px 24px rgba(220, 220, 220, 0.5);
 }
 
 
