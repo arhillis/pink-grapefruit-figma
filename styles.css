@@ -11,6 +11,10 @@ body{
     font-family: "SF Pro";
 }
 
+ul{
+    list-style-type: none;
+    margin-left: -40px;
+}
 
 .container{
     width: 100%;
@@ -69,7 +73,7 @@ h1{
     margin: 0 auto;
 }
 
-header img{
+header video{
     max-width: 1027px;
     width: 100%;    
     height: auto;
@@ -128,7 +132,8 @@ h2{
 }
 
 .fab, .icon-list li img{
-    margin-right: 10px;
+    display: inline-block;
+    width: 20px;
 }
 
 /* **** PRICING **** */
@@ -148,14 +153,13 @@ h2{
 
 .pkg-wrapper{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 40px;
 }
 
 .features{
     line-height: 60px;
-    margin-left: -20px;
-    list-style-type: none;
     min-height: 250px;
 }
 
@@ -170,6 +174,7 @@ h2{
 
 .testimonial p{
     width: 260px;
+    margin-top: 2px;
 }
 
 .testimonial img{
@@ -196,6 +201,7 @@ h2{
 
 #contact{
     text-align: center;
+    margin: 100px auto;
 }
 
 #contact button{
@@ -210,8 +216,28 @@ h2{
     line-height: 19px;
 }
 
+/* ************** FOOTER ******************** */
+footer{
+    background: #000;
+    color: #fff;
+}
+
+.footer-wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 0;
+}
 
 /* ************** MEDIA QUERIES ************* */
+
+@media screen and (max-width: 1400px){
+    .pkg{
+        width: 320px;
+        margin-bottom: 40px;
+    }
+}
 
 @media screen and (max-width: 1027px){
     .step-desc{
@@ -220,7 +246,7 @@ h2{
     }
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 650px){    
     .sm-hidden{
         display: none;
     }
@@ -238,6 +264,9 @@ h2{
         margin: 30px auto;
     }
 
+    .pkg-wrapper{
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 500px){
