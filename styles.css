@@ -9,6 +9,8 @@ body{
     margin: 0;
     padding: 0;
     font-family: "SF Pro";
+    font-size: 16px;
+    color: #191B1B;
 }
 
 ul{
@@ -33,12 +35,9 @@ ul{
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 50px 60px;
+    padding: 47px 60px 0 60px;
     font-size: 16px;     
-}
-
-.brand-wrapper{
-    margin-top: 2px;
+    line-height: 30px;
 }
 
 .brand-sm{
@@ -66,17 +65,28 @@ header{
 }
 
 h1{
-    font-size: 50px;
+    font-size: 80px;
     font-style: heavy;
     font-weight: bolder;
-    width: 550px;
+    max-width: 542px;
     margin: 0 auto;
+}
+
+header p{
+    width: 478px;
+    text-align: center;
+    margin: 30px auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 header video{
     max-width: 1027px;
     width: 100%;    
     height: auto;
+    margin: 70px auto;
 }
 
 /* ************* MAIN ********************** */
@@ -87,6 +97,8 @@ main{
 
 h2{
     text-align: center;
+    margin: 70px auto;
+    font-size: 30px;
 }
 
 .step{
@@ -247,6 +259,19 @@ footer{
 }
 
 @media screen and (max-width: 650px){    
+    nav{
+        padding: 20px 30px 0 30px;
+    }
+    
+    .nav-link{
+        padding: 0 5px;
+    }
+
+    h1{
+        font-size: 50px;
+        width: 80%;
+    }
+
     .sm-hidden{
         display: none;
     }
