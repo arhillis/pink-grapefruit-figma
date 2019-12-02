@@ -101,7 +101,7 @@ h2{
     font-size: 50px;
 }
 
-.step{
+.steps-wrapper{
     display: flex;
     justify-content: space-between;
 }
@@ -134,8 +134,25 @@ h2{
     max-width: 400px;
 }
 
-.step-desc p{
+.step p{
     display: none;
+    animation: fade-out 0.5s;
+}
+
+.current p{
+    display: block;
+    opacity: 1;
+    animation: fade-in 0.5s;
+}
+
+@keyframes fade-in {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes fade-out {
+    from{opacity: 1;}
+    to{opacity: 0;}
 }
 
 .icon-list{
