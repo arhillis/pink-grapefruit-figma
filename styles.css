@@ -67,7 +67,7 @@ header{
 h1{
     font-size: 80px;
     font-style: heavy;
-    font-weight: bolder;
+    font-weight: 800;
     max-width: 542px;
     margin: 0 auto;
 }
@@ -98,7 +98,7 @@ main{
 h2{
     text-align: center;
     margin: 70px auto;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .step{
@@ -134,13 +134,17 @@ h2{
     max-width: 400px;
 }
 
+.step-desc p{
+    display: none;
+}
+
 .icon-list{
-    width: 550px;
-    margin: 0 auto;
+    width: 602px;
+    margin: 120px auto;
     display: grid;
     grid-template-columns: auto auto auto;
     list-style-type: none;
-    grid-gap: 20px 50px;
+    grid-gap: 50px 150px;
 }
 
 .fab, .icon-list li img{
@@ -154,19 +158,24 @@ h2{
     box-sizing: border-box;
     width: 420px;
     padding: 60px 40px;
-    margin-left: 30px;
     font-size: 16px;
     border: 2px solid #eee;
+    box-shadow: 0px 2px 24px rgba(220, 220, 220, 0.5);
+    border-radius: 8px;
 }
 
 .pkg h3{
     font-size: 35px;
 }
 
+.pkg h3 sup{
+    font-size: 15px;
+}
+
 .pkg-wrapper{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 40px;
 }
 
@@ -202,11 +211,11 @@ h2{
     color: #fff;
     font-weight: 600;
     margin-top: 40px;
+    border-radius: 3px;
 }
 
-.pkg:hover{
-    border: 2px solid #ccc;
-    box-shadow: 0px 2px 24px rgba(220, 220, 220, 0.5);
+#pricing .pkg:hover{
+    border: 2px solid #191B1B;
 }
 
 /* ***** CONTACT ***** */
@@ -232,6 +241,7 @@ h2{
 footer{
     background: #000;
     color: #fff;
+    height: 648px;
 }
 
 .footer-wrapper{
@@ -239,7 +249,11 @@ footer{
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    padding: 80px 0;
+    padding: 130px 0;
+}
+
+.footer-wrapper ul{
+    line-height: 50px;
 }
 
 /* ************** MEDIA QUERIES ************* */
@@ -262,7 +276,7 @@ footer{
     nav{
         padding: 20px 30px 0 30px;
     }
-    
+
     .nav-link{
         padding: 0 5px;
     }
@@ -290,8 +304,10 @@ footer{
     }
 
     .pkg-wrapper{
-        flex-direction: column;
+        width: 100%;
+        padding: 0;
     }
+
 }
 
 @media screen and (max-width: 500px){
@@ -299,3 +315,5 @@ footer{
         width: 250px;
     }
 }
+
+/* Test comment */
