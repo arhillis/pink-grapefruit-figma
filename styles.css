@@ -6,7 +6,8 @@ body{
 }
 
 .container{
-    width: 1400px;
+    width: 100%;
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -21,6 +22,7 @@ ul{
 
 p{
     letter-spacing: 0.5px;
+    width: 90%;
 }
 
 /* ********** NAVBAR ****************** */
@@ -71,13 +73,14 @@ h1{
 }
 
 header p{
-    width: 478px;
+    max-width: 478px;
     margin: 20px auto;
     letter-spacing: 0.47px;
 }
 
 video{
-    width: 925px;
+    width: 100%;
+    max-width: 925px;
     height: auto;
     margin: 75px auto;
 }
@@ -107,7 +110,7 @@ section h2{
 }
 
 .overlay-wrapper img{
-    width: 488px;
+    width: 100%;
     height: auto;
 }
 
@@ -137,8 +140,6 @@ section h2{
     margin-bottom: 70px;
 }
 
-
-
 .step.current h3{
     margin-bottom: 21px;
     letter-spacing: 0.7px;
@@ -167,13 +168,14 @@ section h2{
 }
 
 .icon-list{
-    width: 670px;
+    max-width: 670px;
     margin: 100px auto 250px auto;
     padding-left: 0;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-column-gap: 160px;
     line-height: 50px;
+    width: 90%;
 }
 
 .fab, .icon-list li img{
@@ -326,15 +328,39 @@ footer{
 /* ************** MEDIA QUERIES ************* */
 
 @media screen and (max-width: 1400px){
+    .container{
+        width: 100%;
+    }
+
+    .background{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-list{
+        width: 90%;
+    }
     .pkg{
-        width: 320px;
         margin-bottom: 40px;
+    }
+
+    .pkg-wrapper{
+        justify-content: space-around;
+    }
+
+    .footer-wrapper{
+        padding: 110px 0 0 0;
     }
 }
 
 @media screen and (max-width: 1027px){
+    .steps-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
     .step-desc{
-        width: 40%;
+        width: 100%;
         margin: 0 auto;
     }
 }
@@ -363,6 +389,7 @@ footer{
 
     .step{
         flex-direction: column;
+        align-items: center;
     }
 
     .step-desc{
