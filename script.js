@@ -15,10 +15,8 @@ window.onload = () => {
     steps.forEach((step, index) => {
         step.onclick = () =>{
             clearInterval(rotation);
-            if(index != btnIndex){
-                steps[btnIndex].classList.remove('current');
-                steps[index].classList.add('current');
-            }
+            steps.forEach(stp => stp.classList.remove('current'))
+            steps[index].classList.add('current');
         }
     })
 };
