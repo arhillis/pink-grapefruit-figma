@@ -137,6 +137,20 @@ section h2{
     opacity: 0.8;
 }
 
+.side-num{
+    position: absolute;
+    left: 0;
+}
+.side-num .marker{
+    border: 0.5px solid;
+    width: 46px;
+}
+
+.side-num p{
+    position: absolute;
+    top: -30px;
+    left: 66px;
+}
 .step-desc{
     max-width: 340px;
 }
@@ -154,26 +168,26 @@ section h2{
     letter-spacing: 0.7px;
 }
 
-.step p{
-    display: none;
+.step .step-body{
+    height: 0;
+    overflow: hidden;
     margin-bottom: 30px;
-    animation: fade-out 0.5s;
+    animation: slide-up 0.5s;
 }
 
-.current p{
-    display: block;
-    opacity: 1;
-    animation: fade-in 0.5s;
+.current .step-body{
+    height: 250px;
+    animation: slide-down 0.5s;
 }
 
-@keyframes fade-in {
-    from{opacity: 0;}
-    to{opacity: 1;}
+@keyframes slide-down {
+    from{height: 0;}
+    to{height: 250px;}
 }
 
-@keyframes fade-out {
-    from{opacity: 1;}
-    to{opacity: 0;}
+@keyframes slide-up{
+    from{height: 250px;}
+    to{height: 0;}
 }
 
 .icon-list{

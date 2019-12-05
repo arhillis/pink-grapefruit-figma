@@ -5,14 +5,20 @@ window.onload = () => {
 
     const rotateSlides = () => {
         steps[btnIndex].classList.remove('current');
-
         btnIndex = btnIndex === steps.length - 1 ? 0 : btnIndex + 1;
-
         steps[btnIndex].classList.add('current');
 
     };
 
     const rotation = setInterval(rotateSlides, 3000);
 
-    document.querySelector('#about').onclick = () => clearInterval(rotation);
+    steps.forEach((step, index) => {
+        step.onclick = () =>{
+            clearInterval(rotation);
+            if(index != btnIndex){
+                steps[btnIndex].classList.remove('current');
+                steps[index].classList.add('current');
+            }
+        }
+    })
 };
