@@ -187,9 +187,11 @@ section h2{
     width: 90%;
 }
 
-.fab, .icon-list li img{
+.icon-list li img{
     display: inline-block;
     width: 20px;
+    position: relative;
+    top: 5px;
 }
 
 /* **** PRICING **** */
@@ -222,23 +224,19 @@ section h2{
     font-weight: 300;
     margin: 55px 0 15px;
     line-height: 48px;
-    letter-spacing: 5px;
 }
 
 .pkg .price sup{
     font-size: 20px;
-    letter-spacing: 1.5px;
 }
 
 .pkg .title{
-    letter-spacing: 1.5px;
     margin-bottom: 24px;
 }
 
 .pkg .sub-title{
     line-height: 27px;
     width: 340px;
-    letter-spacing: 0.7px;
 }
 
 .pkg .features{
@@ -291,6 +289,8 @@ section h2{
     text-align: center;
     margin: 150px auto 175px;
 }
+
+#contact p{width: 100%}
 
 #contact button{
     width: 200px;
