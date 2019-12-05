@@ -156,11 +156,11 @@ section h2{
 }
 
 .step{
-    margin-bottom: 55px;
+    padding-bottom: 55px;
 }
 
 .step.current{
-    margin-bottom: 70px;
+    padding-bottom: 70px;
 }
 
 .step.current h3{
