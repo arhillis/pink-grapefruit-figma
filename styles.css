@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -23,6 +27,11 @@ ul{
 p{
     letter-spacing: 0.5px;
     width: 90%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 /* ********** NAVBAR ****************** */
@@ -128,16 +137,30 @@ section h2{
     opacity: 0.8;
 }
 
+.side-num{
+    position: absolute;
+    left: 0;
+}
+.side-num .marker{
+    border: 0.5px solid;
+    width: 46px;
+}
+
+.side-num p{
+    position: absolute;
+    top: -30px;
+    left: 66px;
+}
 .step-desc{
     max-width: 340px;
 }
 
 .step{
-    margin-bottom: 55px;
+    padding-bottom: 55px;
 }
 
 .step.current{
-    margin-bottom: 70px;
+    padding-bottom: 70px;
 }
 
 .step.current h3{
@@ -145,31 +168,31 @@ section h2{
     letter-spacing: 0.7px;
 }
 
-.step p{
-    display: none;
+.step .step-body{
+    height: 0;
+    overflow: hidden;
     margin-bottom: 30px;
-    animation: fade-out 0.5s;
+    animation: slide-up 0.5s;
 }
 
-.current p{
-    display: block;
-    opacity: 1;
-    animation: fade-in 0.5s;
+.current .step-body{
+    height: 250px;
+    animation: slide-down 0.5s;
 }
 
-@keyframes fade-in {
-    from{opacity: 0;}
-    to{opacity: 1;}
+@keyframes slide-down {
+    from{height: 0;}
+    to{height: 250px;}
 }
 
-@keyframes fade-out {
-    from{opacity: 1;}
-    to{opacity: 0;}
+@keyframes slide-up{
+    from{height: 250px;}
+    to{height: 0;}
 }
 
 .icon-list{
     max-width: 670px;
-    margin: 100px auto 250px auto;
+    margin: 125px auto;
     padding-left: 0;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -178,9 +201,11 @@ section h2{
     width: 90%;
 }
 
-.fab, .icon-list li img{
+.icon-list li img{
     display: inline-block;
     width: 20px;
+    position: relative;
+    top: 5px;
 }
 
 /* **** PRICING **** */
@@ -213,23 +238,19 @@ section h2{
     font-weight: 300;
     margin: 55px 0 15px;
     line-height: 48px;
-    letter-spacing: 5px;
 }
 
 .pkg .price sup{
     font-size: 20px;
-    letter-spacing: 1.5px;
 }
 
 .pkg .title{
-    letter-spacing: 1.5px;
     margin-bottom: 24px;
 }
 
 .pkg .sub-title{
     line-height: 27px;
     width: 340px;
-    letter-spacing: 0.7px;
 }
 
 .pkg .features{
@@ -282,6 +303,8 @@ section h2{
     text-align: center;
     margin: 150px auto 175px;
 }
+
+#contact p{width: 100%}
 
 #contact button{
     width: 200px;
