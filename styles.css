@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -23,6 +27,11 @@ ul{
 p{
     letter-spacing: 0.5px;
     width: 90%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 /* ********** NAVBAR ****************** */
@@ -169,7 +178,7 @@ section h2{
 
 .icon-list{
     max-width: 670px;
-    margin: 100px auto 250px auto;
+    margin: 125px auto;
     padding-left: 0;
     display: grid;
     grid-template-columns: auto auto auto;
