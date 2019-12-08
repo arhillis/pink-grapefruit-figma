@@ -143,17 +143,16 @@ section h2{
 }
 
 .overlay .jump{
-    transform: translateY(-15px);
     animation-name: jump;
-    animation-duration: 0.5s;
-    animation-delay: 3s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
+    animation-delay: 1s;
 }
 
 @keyframes jump{
-    0%{transform: translateY(-15px);}
-    50%{transform: translateY(0);}
-    100%{transform: translateY(-15px);}
+    0%{transform: translateY(0);}
+    5%{transform: translateY(-15px);}
+    10%{transform: translateY(0);}
 }
 
 .side-num{
