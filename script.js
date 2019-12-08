@@ -20,7 +20,7 @@ window.onload = () => {
             steps.forEach(stp => stp.classList.remove('current'));
             imgs.forEach(img => img.classList.remove('jump', 'jump-once'));
             steps[index].classList.add('current');
-            setTimeout(() => imgs.forEach(img => img.classList.add('jump-once')), 250);
+            setTimeout(() => imgs.forEach(img => img.classList.add('jump-once')), 10);
         }
     })
 };
