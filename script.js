@@ -1,10 +1,11 @@
 window.onload = () => {
     const steps = document.querySelectorAll('.step');
+    const imgs = document.querySelectorAll('.overlay img');
 
     let btnIndex = 0;
 
     const rotateSlides = () => {
-        document.querySelectorAll('.overlay img').forEach(img => img.classList.add('jump'))
+        imgs.forEach(img => img.classList.add('jump'))
         steps[btnIndex].classList.remove('current');
         btnIndex = btnIndex === steps.length - 1 ? 0 : btnIndex + 1;
         steps[btnIndex].classList.add('current');
@@ -17,8 +18,9 @@ window.onload = () => {
         step.onclick = () =>{
             clearInterval(rotation);
             steps.forEach(stp => stp.classList.remove('current'));
-            document.querySelectorAll('.overlay img').forEach(img => img.classList.remove('jump'))
+            imgs.forEach(img => img.classList.remove('jump', 'jump-once'));
             steps[index].classList.add('current');
+            setTimeout(() => imgs.forEach(img => img.classList.add('jump-once')), 250);
         }
     })
 };

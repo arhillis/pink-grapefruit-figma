@@ -146,6 +146,13 @@ section h2{
     animation-name: jump;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+}
+
+.overlay .jump-once{
+    animation-name: jump;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
     animation-delay: 1s;
 }
 
